@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:background="@drawable/dialogstyle"
+    android:orientation="vertical" >
+
+<LinearLayout
+ 
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  >
+  
+      <TextView
+        android:id="@+id/Title"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ADD_ALARM"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+   
+        
+         />
+    
+    
+    
+    
+    <View
+        android:id="@+id/topborder"
+      
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:background="@color/white" />
+    
+  
+    
+    
+    
+    <LinearLayout
+ android:layout_marginTop="20dp"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  >
+    <TextView 
+        android:layout_gravity="center"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textStyle="bold"
+        android:text="@string/volume_bold"
+        />
+    <SeekBar android:layout_height="wrap_content" android:id="@+id/sbVolume" android:layout_width="150dp" android:max="100" android:layout_marginLeft="20dp" ></SeekBar>
+    <TextView 
+        
+        android:id="@+id/volume"
+          android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+      
+     <LinearLayout
+ android:layout_marginTop="10dp"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  >
+    <TextView 
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fadein"
+        />
+     
+     <SeekBar android:layout_height="wrap_content" android:id="@+id/sbVibrate" android:layout_width="150dp" android:max="5" android:layout_marginLeft="20dp"></SeekBar>
+     <TextView 
+        android:id="@+id/vibrator"
+          android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+     
+  </LinearLayout>
+  <LinearLayout 
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView 
+        android:id="@+id/vibrate"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+          android:typeface="serif"
+          android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vibration"
+        />
+     
+   <CheckBox 
+       android:id="@+id/Vibrate"
+       android:layout_marginLeft="50dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/vibrate"
+     android:layout_gravity="right"
+        
+       />
+   
+  
+     
+     </LinearLayout>
+     
+   <LinearLayout 
+       android:layout_marginTop="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+   <TextView 
+        android:id="@+id/Tone"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+          android:typeface="serif"
+          android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tone"
+        />
+       <Button 
+        android:id="@+id/alarmTone"
+        android:layout_marginLeft="60dp"
+        android:layout_gravity="center"
+     
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+       android:text="@string/set_tone"   
+       android:background="@drawable/dialogstyle"     
+        
+        />
+       </LinearLayout>
+     <LinearLayout
+         android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_gravity="center"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialogstyle"
+            android:text="@string/back_normal" />
+
+        <Button 
+        
+        android:id="@+id/finish"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_normal"
+        android:background="@drawable/dialogstyle"
+        />
+    </LinearLayout>  
+    
+    <Button 
+        
+        android:id="@+id/finish1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Done"
+        android:background="@drawable/dialogstyle"
+        />
+   
+ 
+
+</LinearLayout>
+
+</RelativeLayout>

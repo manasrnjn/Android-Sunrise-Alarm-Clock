@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:clipToPadding="true"
+    android:background="@drawable/dialogstyle">
+   <TextView
+        android:id="@+id/Title"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ADD_ALARM"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        
+         />
+    
+    
+    
+    
+    <View
+        android:id="@+id/topborder"
+        android:layout_below="@+id/Title"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:background="@color/white" />
+ 
+     
+      <TextView
+        android:id="@+id/label"
+        android:layout_below="@+id/topborder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:typeface="serif"
+        android:text="@string/alarm_type_Text"
+         />
+     
+  <RelativeLayout
+      android:layout_below="@+id/label"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal">
+    
+    <ImageView
+        android:id="@+id/sunrise"
+        android:contentDescription="@string/Sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sunrise" 
+                 
+        />
+        
+         <ImageView
+        android:id="@+id/sunset"
+         android:contentDescription="@string/Sunset"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@+id/sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sunset"             
+        />
+        
+ 
+
+
+    
+    <ImageView
+        android:id="@+id/regular"
+         android:contentDescription="@string/Regular"
+        android:layout_below="@+id/sunrise"
+       android:layout_marginLeft="39dp"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/regular"     
+         android:paddingTop="5dp"        
+        />
+
+         
+         
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:textColor="@color/white"
+             android:text="@string/Sunrise"
+            android:layout_alignLeft="@+id/sunrise"
+    android:layout_alignTop="@+id/sunrise"
+    android:layout_alignRight="@+id/sunrise"
+    android:layout_alignBottom="@+id/sunrise"
+    android:layout_margin="1dp"
+    android:gravity="center"
+             />
+         
+            <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+               android:textStyle="bold"
+             android:text="@string/Sunset"
+             android:textColor="@color/white"
+            android:layout_alignLeft="@+id/sunset"
+    android:layout_alignTop="@+id/sunset"
+    android:layout_alignRight="@+id/sunset"
+    android:layout_alignBottom="@+id/sunset"
+    android:layout_margin="1dp"
+    android:gravity="center"
+    android:paddingLeft="15dp"
+             />
+            
+               <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+               android:textStyle="bold"
+             android:text="@string/Regular"
+             android:textColor="@color/white"
+            android:layout_alignLeft="@+id/regular"
+    android:layout_alignTop="@+id/regular"
+    android:layout_alignRight="@+id/regular"
+    android:layout_alignBottom="@+id/regular"
+    android:layout_margin="1dp"
+    android:gravity="center"
+    android:paddingTop="5dp"
+             />
+               z
+             
+            
+        
+ </RelativeLayout>
+      
+ 
+  
+</RelativeLayout>

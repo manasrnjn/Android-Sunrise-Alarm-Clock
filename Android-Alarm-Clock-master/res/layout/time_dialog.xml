@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:background="@drawable/dialogstyle"
+    android:orientation="vertical" >
+
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+    
+    
+      <TextView
+        android:id="@+id/Title"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ADD_ALARM"
+        android:textSize="25sp"
+        android:textStyle="bold"
+   
+        
+         />
+    
+    
+    
+    
+    <View
+        android:id="@+id/topborder"
+     
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:background="@color/white" />
+    
+    
+    
+            <com.manas.sunrisealarm.alarm.TimePicker
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    
+  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_gravity="center"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialogstyle"
+            android:text="@string/back_normal" />
+
+       <Button 
+        
+        android:id="@+id/dialog_next"
+        android:background="@drawable/dialogstyle"
+          android:layout_marginLeft="5dp"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_normal"
+        />
+    </LinearLayout>
+    
+    
+  
+
+</LinearLayout>
+</RelativeLayout>

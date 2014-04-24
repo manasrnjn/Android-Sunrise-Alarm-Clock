@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manas.sunrisealarm"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.manas.sunrisealarm.alarm.AlarmActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.manas.sunrisealarm.preferences.AlarmPreferencesActivity"
+            android:label="@string/app_name" >
+        </activity>        
+        
+        <service
+            android:process="za.co.neilson.alarm.serviceProcess"
+            android:name="com.manas.sunrisealarm.service.AlarmService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            >
+        </service>
+		<receiver android:name="com.manas.sunrisealarm.service.AlarmServiceBroadcastReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name = "com.manas.sunrisealarm.alert.AlarmAlertActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+		<receiver android:name="com.manas.sunrisealarm.alert.AlarmAlertBroadcastReciever" >
+        </receiver>
+        <receiver android:name = "com.manas.sunrisealarm.telephony.PhoneStateChangedBroadcastReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.manas.sunrisealarm.preferences.SeekBarVolume"></activity>
+        <activity android:name="com.manas.sunrisealarm.alert.AlarmFirstAlertActivity" ></activity>
+        <receiver android:name="com.manas.sunrisealarm.service.DatabaseUpdateReceiver" android:exported="true">
+               <intent-filter>
+        <action android:name="com.manas.sunrisealarm.alarm" >
+        </action>
+    </intent-filter>
+            
+            </receiver>
+        <service android:name="com.manas.sunrisealarm.service.DataBaseUpdateService"></service>
+        <activity android:name="com.manas.sunrisealarm.alarm.ZoneList"></activity>
+        <activity android:name="com.manas.sunrisealarm.alert.TonePicker" android:theme="@android:style/Theme.Dialog" ></activity>
+    </application>
+
+</manifest>

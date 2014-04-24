@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Application -->
+	<color name="holo_blue_light">#ff33b5e5</color>
+	
+    <!-- Math Alarm Activity -->
+    <string name="app_name">Sunrise Alarm Application</string>
+    <string name="title_activity_set_alarms">Set Alarm</string>
+    <string name="no_alarms">No alarms have been set</string>
+    
+    <string name="button_new">New</string>
+    
+    
+    <!-- AlarmActivity -->
+    <string name="MY_ALARMS">MY ALARMS</string>
+    <string name="ADD_ALARM">ADD ALARM</string>
+    <string name="Alarm_Name">ALARM NAME</string>
+    <string name="NOW">NOW</string>
+    <string name="DigitalClock">DigitalClock</string>
+    <string name="Current_Date">Current Date</string>
+    <string name="Next">Tomorrow, </string>
+    <string name="Today">Today, </string>
+    <string name="SUNRISE_N_A"> N/A </string>
+    <string name="SUNSET_N_A"> N/A </string>
+    <string name="SETTINGS">SETTINGS</string>
+    <string name="TIME_FORMAT">TIME FORMAT</string>
+    
+    
+    
+    <!-- AlarmPreferencesActivity -->
+    <string name="Name">Name: </string>
+    <string name="AlarmType">Alarm Type: </string>
+    <string name="NotDefined">Not Defined</string>
+    <string name="Time">Time: </string>
+    <string name="Melody">Melody: </string>
+    <string name="Volume">Volume: </string>
+    <string name="Not_set">Not Set</string>
+    <string name="Ring_Type">Ring Type: </string>
+    <string name="Fixed">Fixed</string>
+    <string name="ringtype"> No other Ring Type is supported by your Phone </string>
+    <string name="tone">Tone: </string>
+    <string name="First_Alarm">First Alarm On Time: </string>
+    <string name="fadein">Fade In: </string>
+    <string name="adjustTime">Gradually adjust Time? </string>
+    <string name="zero_days">After 0 Days</string>
+    <!--  Alarm_Type_Prompt -->
+     <string name="alarm_type_Text">WHAT KIND OF ALARM DO YOU WANT TO SET ?</string> 
+      <string name="Sunrise">SUN RISE</string> 
+       <string name="Sunset">SUN SET</string>    
+    <string name="Regular">REG ULAR</string>
+    
+   <string name="vibrate">Vibrate </string>
+   <string name="vibration">Vibration: </string>
+    <string name="set_tone">Set Tone </string>
+    <string name="volume_bold">Volume: </string>
+    <string name="dialy_adjustment">Daily Adjustment: </string>
+    
+    <!-- Firstalertactivity -->
+    <string name="Alarm_Clock">Alarm Clock</string>
+    <string name="Default_time">00:00</string>
+    <string name="snooze_5">snooze 5</string>
+    <string name="snooze_3">snooze 3</string>
+    <string name="snooze_10">snooze 10</string>
+    <string name="stop_snooze">stop</string>
+    <string name="ten_mins">+10</string>
+<string name="five_mins">+5</string>
+<string name="three_mins">+3</string>    
+<string name="stop">STOP</string>
+    
+    
+    <string name="Finish">Finish</string>
+    <string name="Done">Done</string>
+    
+    <!-- offset_dialog -->
+    <string name="add_offset">ADD OFFSET</string>
+    <string name="next_normal">Next</string>
+    <string name="enable">Enable</string>
+    
+        <string name="back_normal">Back</string>
+    <string  name="alarmimage">alarmImage</string>
+    
+    <!-- Menu -->
+    <string name="menu_item_rate">Rate on Goolge Play</string>
+    <string name="menu_item_website">Website</string>
+    <string name="menu_item_report">Report a Bug</string>
+    
+    <!-- Alert -->
+	<string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="decimal_button_text">,</string>
+	<string name="clear_button_text">Clear</string>
+	<string name="minus_button_text">-</string>
+	
+	
+	<color name="title_background_color">#000000</color>
+		
+	<string name="button_save">Save</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+
+	 <string name="ringtones">System Ringtones</string>
+    <string name="notifications">System Notifications</string>
+    <string name="alarms">System Alarms</string>
+</resources>
