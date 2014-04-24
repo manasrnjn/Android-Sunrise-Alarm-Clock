@@ -1,0 +1,1 @@
+An android project to create three different types of alarm viz. Sunrise Alarm, Sunset Alarm and Regular Alarm. Contains Options to create different alarm profiles with their own custom settings.
